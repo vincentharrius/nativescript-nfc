@@ -24,7 +24,7 @@
     "tslint": "tslint --config '../tslint.json' '*.ts' --exclude '**/node_modules/**'",
     "tslint.demo": "tslint --config '../tslint.json' '../demo/app/*.ts' --exclude '**/node_modules/**'",
     "ci.tslint": "npm run tslint && npm run tslint.demo",
-    "prepublishOnly": "npm run build"
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
