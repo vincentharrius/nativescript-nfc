@@ -148,11 +148,11 @@ export interface NfcApi {
 // this was done to generate a nice API for our users
 export class Nfc implements NfcApi {
   available(): Promise<boolean> {
-    return undefined;
+    return new Promise(r => r(false));
   }
 
   enabled(): Promise<boolean> {
-    return undefined;
+    return new Promise(r => r(false));
   }
 
   eraseTag(): Promise<any> {
