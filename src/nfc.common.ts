@@ -156,23 +156,23 @@ export class Nfc implements NfcApi {
   }
 
   eraseTag(): Promise<any> {
-    return undefined;
+    return new Promise(r => r(undefined));
   }
 
   setOnNdefDiscoveredListener(
     callback: (data: NfcNdefData) => void,
     options?: NdefListenerOptions
   ): Promise<any> {
-    return undefined;
+    return new Promise(r => r(undefined));
   }
 
   setOnTagDiscoveredListener(
     callback: (data: NfcTagData) => void
   ): Promise<any> {
-    return undefined;
+    return new Promise(r => r(undefined));
   }
 
   writeTag(arg: WriteTagOptions): Promise<any> {
-    return undefined;
+    return new Promise(r => r(undefined));
   }
 }
